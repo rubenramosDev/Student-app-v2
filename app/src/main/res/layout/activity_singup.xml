@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SingupActivity">
+
+    <View
+        android:id="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="?attr/bg_top_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="S'enregistrer"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_header" />
+
+    <EditText
+        android:id="@+id/etxtLastName"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/etxtFirstName"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Prenom"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtLastName" />
+
+    <EditText
+        android:id="@+id/etxtStudentNum"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Numéro d'etudiant"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtFirstName" />
+
+    <EditText
+        android:id="@+id/etxtUser"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Identifiant"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtStudentNum" />
+
+    <EditText
+        android:id="@+id/etxtPassword"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtUser" />
+
+    <Button
+        android:id="@+id/btnSingup"
+        android:layout_width="287dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="?attr/bg_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="S'enregistrer"
+        android:textColor="@color/day_dark"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtPassword" />
+
+    <TextView
+        android:id="@+id/txtvSingup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Vous avez déjà un compte ? Connetez-vous"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
